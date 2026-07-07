@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>what's this??</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Opening Screen -->
+    <div id="welcome" class="container">
+        <h1>hi jeremiah :)</h1>
+
+        <p>
+            i wonder what would happen if you clicked this bright pink button??
+        </p>
+
+        <button onclick="openLetter()">
+            "this bright pink button"
+        </button>
+    </div>
+
+    <!-- Hidden Letter -->
+    <div id="letter" class="container hidden">
+
+        <h1>HAPPY ANNIVERSARY!!!</h1>
+
+        <p>
+            I know we couldn't see each other in person today, but I still wanted to make you
+            something special :) 
+        </p>
+
+        <p>
+            I tried coding for the first time and found that this is lowkey hard so here's a 
+            link to another website with a more user-friendly interface:
+        </p>
+
+        <p>
+        <a href="https://heyzine.com/flip-book/5c23f46417.html"
+   target="_blank"
+   rel="noopener noreferrer">
+  this link!
+</a>
+        </p>
+
+    </div>
+
+<script>
+function openLetter() {
+    const welcome = document.getElementById("welcome");
+    const letter = document.getElementById("letter");
+
+    welcome.classList.add("hidden");
+    letter.classList.remove("hidden");
+    letter.classList.add("fade-in");
+}
+</script>
+
+</body>
+</html>
